@@ -46,13 +46,13 @@
 
 // --reverse number using % and / sign
 
-// let num = 123456
+let num = 123456
 
-// while(true){
-//   if(num==0){
-//     break
-//   }
-//   console.log(num%10)
-//   num = Math.floor(num/10)
+while(true){
+  if(num==0){
+    break
+  }
+  console.log(num%10)
+  num = Math.floor(num/10)
   
-// }
+}
