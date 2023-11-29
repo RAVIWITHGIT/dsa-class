@@ -2,10 +2,10 @@
 
 
 // for(let i = 0; i<arr.length-1;i++){
-//     let max = i
+//     let max = i 
 //     for(let j = i+1; j<arr.length;j++){
 //         if(arr[max]<arr[j]){
-//             max = j
+//             max = j 
 //         }
 //     }
 //     var temp = arr[i]
@@ -15,9 +15,27 @@
 // console.log(arr)
 
 // --------------------------------------------
-let arr = [1,2,3,4,5,6,4]
-let target = 6
-let count = 0
+// let arr = [1,2,3,4,5,6,4]
+// let target = 6
+// let count = 0
+
+// for (let i = 0; i < arr.length-1; i++) {  
+//     for (let j = i+1; j < arr.length; j++) { 
+//         if((arr[i]+arr[j])==6){
+//             if(count>0){
+//                 break
+//             }
+//             console.log(i)
+//             console.log(j)
+//             console.log('yes')
+//             count++
+//         }
+        
+//     }
+    
+    
+// }
+
 
 // for (let i = 0; i < arr.length-1; i++) {
 //     for (let j = i+1; j < arr.length; j++) {
@@ -37,23 +55,21 @@ let count = 0
 // }
 
 
-for (let i = 0; i < arr.length-1; i++) {
-    for (let j = i+1; j < arr.length; j++) {
-        if((arr[i]+arr[j])==6){
-            if(count>0){
-                break
-            }
-            console.log(i)
-            console.log(j)
-            console.log('yes')
-            count++
-        }
-        
-    }
-    
-    
-}
+// --------------------- find 2 index which value  add then equal to target value
 
+// let arr = [1,2,3,4,5,6,4]
+// let target = 6
+// let count = 0
+// let k = 0
+// for (let i = 1; i < arr.length; i++) {
+//     if(arr[k]+arr[i]==6){
+//         console.log(k)
+//         console.log(i)
+//     }
+
+
+    
+// }
 
 
 
