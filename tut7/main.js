@@ -96,8 +96,8 @@
 
 
 // ------------
-// let arr1 = [1,2,3,4,4]
-// let arr2 = [3,4,4]
+// let arr1 = [1,2,3,4,4,12,23,34,45,45,56,67,45]
+// let arr2 = [3,4,4,45]
 
 
 // let narr = []
@@ -107,17 +107,20 @@
 // let e = 0
 
 // for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr2[e])
 //     if(arr1[i]<arr2[e]){
 //         continue
 //     }
 //     else if(arr1[i]==arr2[e]){
 //         narr.push(arr1[i])
+//         if(e<arr2.length-1){
 //         e++
+//         }
 //         continue
 //     }
-//     console.log(i)
 
     
 // }
 // console.log(narr)
+
 
