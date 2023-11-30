@@ -11,27 +11,27 @@
 
 // know about how to run sort() function run
 
-// let arr = [6,4,5,8,2,1,9]
+let arr = [6,4,5,8,2,1,9]
 
-// let k = 0
-// for(let i in arr){
-//     for (let j = 0; j < arr.length-1-i; j++) {
-//         if(arr[j]<arr[j+1]){
+let count = 0
+for(let i in arr){ 
+    for (let j = 0; j < arr.length-1-i; j++) { 
+        if(arr[j]<arr[j+1]){
 
 
-//         }
-//         else{
-//             let temp = arr[j]
-//             arr[j] = arr[j+1];
-//             arr[j+1] = temp
-//         }
-//         console.log(arr)
-//         k++
+        }
+        else{
+            let temp = arr[j]
+            arr[j] = arr[j+1];
+            arr[j+1] = temp
+        }
+        // console.log(arr)
+        count++
         
-//     }
-//     console.log(k)
-// }
-
+    }
+    // console.log(count)
+}
+console.log(arr)
 
 // how we can reverse number in dsa
 
@@ -46,13 +46,13 @@
 
 // --reverse number using % and / sign
 
-let num = 123456
+// let num = 123456
 
-while(true){
-  if(num==0){
-    break
-  }
-  console.log(num%10)
-  num = Math.floor(num/10)
+// while(true){
+//   if(num==0){
+//     break
+//   }
+//   console.log(num%10)
+//   num = Math.floor(num/10)
   
-}
+// }
