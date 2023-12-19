@@ -1,3 +1,5 @@
+// ------------------- find first and last occurence index of find varaible in array--------------
+
 // let arr = [1,2,3,3,3,3,6]
 // let find = 3
 
@@ -40,7 +42,6 @@
 
 
 // ----------------------------------------
-// incomplete code
 // let arr = [1,2,3,3,3,3,3,5,9,8,6]
 
 // let s = 0
