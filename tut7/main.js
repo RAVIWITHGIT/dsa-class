@@ -1,3 +1,5 @@
+// check 2 array value = target value
+
 // let arr = [1,2,3,4,5,6,7,8];
 
 // let s = 0 
@@ -21,7 +23,8 @@
 
 
 
-// ------------------------ array intersection -------------------------
+// ---------------------------------------- array intersection------------- -------------------------
+// ---------- find comment value in 2 array
 // let arr1 = [1,2,3,4]
 // let arr2 = [3,4]
 // let narr = []
