@@ -68,92 +68,127 @@
 
 
 
-// -------------------------------------------------------------
 
 
+// -***************************************************************************************
 class Node{
 
+  
+
     constructor(data,next=null){
-        this.data = data;
-        this.next = next
-
+        console.lo
+        this.data=data;
+        this.next=next
     }
-
 }
 
-class linkedlist{
+class Linkedlist{
+
     constructor(){
-        this.head = null;
-        this.size = 0
+        this.head=null;
+        this.size=0
     }
 
-    addnode(data){
-        let node = new Node(data)
-        console.log('node',node)
-        if(this.head==null){
-            this.head = node
+    addlastnode(data){
+
+        let node=new Node(data)
+
+        console.log(node,"nnnnodewe")
+
+        if(this.head == null){
+            this.head=node
             this.size++
             return
         }
-        let currentnode = this.head;
+
+        let currentnode=this.head;
+        console.log(currentnode,"ccuurer")
 
         while(currentnode.next !== null){
-            currentnode = currentnode.next
+            currentnode=currentnode.next
         }
-        currentnode.next = node
+
+        currentnode.next=node
         this.size++
+
     }
+
     addfirstnode(data){
-        this.head = new Node(data,this.head)
+
+        this.head=new Node(data,this.head)
+
         this.size++
+
     }
-    printlinkdlist(){
+
+    printlinkedlist(){
+
         if(this.size==0){
+
             console.log('list is empty')
             return
         }
-        let currentnode = this.head;
+
+        let currentnode=this.head;
+
         while(currentnode){
-            console.log(currentnode.data)
-            currentnode = currentnode.next
+            console.log(currentnode.data);
+
+            currentnode=currentnode.next
         }
     }
-        insertindex(data,index){
-            if(index>0 || index<this.size){
-                console.log('index mustbe  grater then 0 or it should be less then size ')
-                return
-            }
-            if(index==0){
-                // this.head = new 
-                this.addfirstnode(data)
 
-            }
-            let count = 0;
-            let currentnode = this.head
+    insertatindex(data,index){
 
-            let previous = null
-            while(count<index){
-                count++
-                previous= currentnode;
-                currentnode = currentnode.next
-            }
-            let node = new Node(data);
-            previous.next = node;
-            node.next = currentnode
-            this.size++
+        if(index<0 || index>this.size){
+            console.log( "index mustev grater then 0 or it should be less then the size")
+            return
+
         }
-    
+
+        if(index==0){
+
+        this.addfirstnode(data)
+        return
+
+            
+        }
+
+        let count=0;
+
+        let currentnode=this.head
+
+        let previous=null
+
+        while(count<index){
+            count++
+
+            previous=currentnode;
+            currentnode=currentnode.next
+
+        }
+
+        let node=new Node(data);
+
+        previous.next=node;
+
+        node.next=currentnode;
+
+
+        this.size++
+
+
+
+    }
 }
 
-let li = new linkedlist();
-console.log(li)
+let ll=new Linkedlist();
+console.log(ll)
 
-li.addnode(100)
-// console.log(li)
-li.addnode(200)
-// console.log(li)
-li.addfirstnode(300)
-// console.log(li)
-li.insertindex(400,2)
-li.printlinkdlist()
-console.log(li)
+ll.addlastnode(100)
+ll.addlastnode(200)
+ll.addfirstnode(300)
+ll.insertatindex(400,2)
+ll.printlinkedlist()
+
+console.log(ll)
